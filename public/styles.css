@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#home{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Press Start 2P';
+    font-size: 3.5rem;
+    color: hsl(240, 100%, 50%);
+    padding: 20px 30px;
+    border-top: 3px solid hsl(0, 0%, 100%);
+    cursor: pointer;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 0; 
+    text-shadow: 
+        0 0 2px #00ff00, 
+        0 0 4px #00ff00, 
+        0 0 6px #00ff00, 
+        0 0 8px #00ff00;
+}
+
+
+body {
+    margin: 0;
+    text-align: center; /* Center the inline content */
+    background: #000;
+    height: 100vh; /* Set height to fill viewport */
+    background-image: url('images/tetris-wallpaper.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    /* Make the container fill the entire viewport height */
+    /* Enable flexbox layout for centering content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Text color for contrast with the background image */
+}
+
+.container {
+    padding: 30px;
+    margin: 30px;
+    background-color: black;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+    overflow-x: hidden; /* Clear floats inside the container */
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container p {
+    line-height: 1.5;
+    color: white; /* Assuming you want the text to be visible on the black background */
+}
+
+.float-left {
+    float: left;
+    margin: 10px 20px 10px 0; /* Adjusted margins: top, right, bottom, left */
+    max-width: 50%; /* Adjust the image size as needed */
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px; /* Add some margin to the left and bottom of the image for better spacing */
+    max-width: 50%; /* Adjust the image size as needed */
+    display: inline; /* Ensure the image aligns with text */
+}
+
+.justify{
+    text-align: justify;
+}
+
+
+.styled-link {
+    color: blue; /* Set link text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    /* Add more styles as needed */
+}
+
+/* Styles for slideshow container */
+.slideshow-container {
+  max-width: 650px; /* Adjust width as needed */
+  position: relative;
+  margin: auto;
+}
+
+  
+/* Hide all slides by default */
+.mySlides {
+    display: none;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
+  /* Position the next button */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the previous button */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation between slides */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  #home{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Press Start 2P';
+    font-size: 2.5rem;
+    color: hsl(240, 100%, 50%);
+    padding: 10px 20px;
+    border-top: 3px solid hsl(0, 0%, 100%);
+    cursor: pointer;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 6px;
+    margin-bottom: 0px; 
+    text-shadow: 
+        0 0 2px #00ff00, 
+        0 0 4px #00ff00, 
+        0 0 6px #00ff00, 
+        0 0 8px #00ff00;
+}
+
+body {
+    margin: 0;
+    text-align: center; /* Center the inline content */
+    background: #000;
+    height: 100vh; /* Set height to fill viewport */
+    background-image: url('images/tetris-wallpaper.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    /* Make the container fill the entire viewport height */
+    /* Enable flexbox layout for centering content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Text color for contrast with the background image */
+    
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 30px;
+    margin: 30px;
+    background-color: black;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+    overflow: hidden; /* Clear floats inside the container */
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container p {
+    line-height: 1.5;
+    color: white; /* Assuming you want the text to be visible on the black background */
+}
+
+.justify{
+    text-align: justify;
+}
+
+footer {
+    background-color: hsl(220, 44%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0;
+    border-top: 3px solid hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.social-media {
+    position: absolute;
+    right: 20px;
+}
+.social-media a {
+    color: hsl(113, 100%, 50%);
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+.social-media a:hover{
+    color: hsl(113, 100%, 70%);
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+    font-size: 0.8rem;
+}
+.nav-container {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-bottom: 8px;
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+    max-width: 100%;
+}
+    
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding: 5px 0px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: blue;
+    border-radius: 4px;
+    text-shadow: 
+        0 0 2px #00ff00, 
+        0 0 4px #00ff00, 
+        0 0 6px #00ff00, 
+        0 0 8px #00ff00;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.35s;
+}
+
+.nav-item a:hover {
+    background-color: #1cff1c;
+}
+
+.tetris-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(240, 100%, 50%);
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+    box-shadow: 
+        0 0 10px #00ff00, 
+        0 0 20px #00ff00, 
+        0 0 30px #00ff00, 
+        0 0 40px #00ff00;
+    margin: 20px 0;
+    font-family: 'Press Start 2P';
+    color: #fff;
+}
+
+.tetris-form label {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.tetris-form input, .tetris-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.tetris-form input:focus, .tetris-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.tetris-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-shadow: 
+        0 0 2px #00ff00, 
+        0 0 4px #00ff00, 
+        0 0 6px #00ff00, 
+        0 0 8px #00ff00;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Button and link styles */
+.view-btn, .delete-btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold; /* Added font weight */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.view-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Adjust margin for delete button to align with Tetris-style design */
+.delete-btn {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Tetris-style design for Delete Comment button */
+.delete-btn::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #dc3545;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tetris-style design for View Comment link */
+.view-btn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #28a745;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+

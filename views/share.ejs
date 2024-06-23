@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+<body>
+  <h1 id="home">Share your thoughts</h1>
+  
+  <%- include('./partials/nav.ejs') %>
+
+  
+
+  <div class="container">
+    <h1>Our community</h1>
+    <br><br><br>
+    <p>Give feedback, brag about your highest score, what shoyld we implement?</p>
+
+    <form class="tetris-form" action="/users" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+      
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+    <div class="comments">
+      <h2>All Comments</h2>
+      <% if (users.length > 0) { %>
+        <% users.forEach(user => { %>
+
+          <div class="comment">
+        <p class="name"><%= user.name %></h3>
+        <p class="lastname"><%= user.lastname %></p>
+        <p class="comment"><%= user.comment %></p>
+        <a href="/users/<%= user._id %>" class="view-btn">View Comment</a>
+        <form action="/users/<%= user._id %>?_method=DELETE" method="post" class="delete-form "> 
+       </form>
+     </div>
+
+        <% }) %>
+        <% } else { %>
+        <p>There are no comments to display...</p>
+        <% } %>
+      </div>
+
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
