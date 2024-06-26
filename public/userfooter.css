@@ -1,0 +1,12 @@
+footer {
+    background-color: hsl(220, 44%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 18px 0;
+    border-top: 3px solid hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
